@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: #E6EFF5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-rows: 260px 260px;
+    grid-template-columns: 318px 318px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 15%);
+    border-radius: 5px;
+}
+
+.hero-text {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    background-color: white;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 5px 5px 0 0;
+    h1 {
+        color: #2AB3B1;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    h3 {
+        color: #C0DF33;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    p {
+        color: #9AA7BE;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.monthly-sub {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #2AB3B0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 0 0 0 5px;
+    h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .price {
+        display: flex;
+        align-items: center;
+        h3 {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .per-month {
+            font-size: 16px;
+            color: white;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+    p {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    button {
+        background-color: #C0DF33;
+        color: white;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 10%);
+        padding: 15px 0px;
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+}
+
+.why-us {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: #4BBFBC;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 5px 0;
+    h3 {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 18px;
+    }
+    p {
+        color: white;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
