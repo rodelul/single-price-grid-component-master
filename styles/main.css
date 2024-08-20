@@ -24,8 +24,7 @@ body {
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
   border-radius: 5px;
 }
-
-.hero-text {
+.hero-inner .hero-text {
   grid-row: 1/2;
   grid-column: 1/3;
   background-color: white;
@@ -36,23 +35,22 @@ body {
   padding: 40px;
   border-radius: 5px 5px 0 0;
 }
-.hero-text h1 {
+.hero-inner .hero-text h1 {
   color: #2AB3B1;
   font-weight: bold;
   font-size: 24px;
 }
-.hero-text h3 {
+.hero-inner .hero-text h3 {
   color: #C0DF33;
   font-weight: bold;
   font-size: 18px;
 }
-.hero-text p {
+.hero-inner .hero-text p {
   color: #9AA7BE;
   font-weight: 400;
   font-size: 16px;
 }
-
-.monthly-sub {
+.hero-inner .monthly-sub {
   grid-row: 2/3;
   grid-column: 1/2;
   background-color: #2AB3B0;
@@ -63,32 +61,32 @@ body {
   gap: 16px;
   border-radius: 0 0 0 5px;
 }
-.monthly-sub h2 {
+.hero-inner .monthly-sub h2 {
   color: white;
   font-weight: bold;
   font-size: 18px;
 }
-.monthly-sub .price {
+.hero-inner .monthly-sub .price {
   display: flex;
   align-items: center;
 }
-.monthly-sub .price h3 {
+.hero-inner .monthly-sub .price h3 {
   color: white;
   font-size: 32px;
   font-weight: bold;
 }
-.monthly-sub .price .per-month {
+.hero-inner .monthly-sub .price .per-month {
   font-size: 16px;
   color: white;
   font-weight: 400;
   line-height: 28px;
 }
-.monthly-sub p {
+.hero-inner .monthly-sub p {
   color: white;
   font-weight: 400;
   font-size: 16px;
 }
-.monthly-sub button {
+.hero-inner .monthly-sub button {
   background-color: #C0DF33;
   color: white;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
@@ -99,8 +97,7 @@ body {
   font-weight: 400;
   border-radius: 5px;
 }
-
-.why-us {
+.hero-inner .why-us {
   grid-row: 2/3;
   grid-column: 2/3;
   background-color: #4BBFBC;
@@ -110,14 +107,125 @@ body {
   justify-content: center;
   border-radius: 0 0 5px 0;
 }
-.why-us h3 {
+.hero-inner .why-us h3 {
   color: white;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 18px;
 }
-.why-us p {
+.hero-inner .why-us p {
   color: white;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 65px 0px;
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-rows: 311px 311px 311px;
+    grid-template-columns: 311px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+    border-radius: 5px;
+  }
+  .hero-inner .hero-text {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: white;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    border-radius: 5px 5px 0 0;
+  }
+  .hero-inner .hero-text h1 {
+    color: #2AB3B1;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .hero-inner .hero-text h3 {
+    color: #C0DF33;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .hero-inner .hero-text p {
+    color: #9AA7BE;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .hero-inner .monthly-sub {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #2AB3B0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 0px;
+  }
+  .hero-inner .monthly-sub h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .hero-inner .monthly-sub .price {
+    display: flex;
+    align-items: center;
+  }
+  .hero-inner .monthly-sub .price h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .hero-inner .monthly-sub .price .per-month {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .hero-inner .monthly-sub p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .hero-inner .monthly-sub button {
+    background-color: #C0DF33;
+    color: white;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 15px 0px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+  }
+  .hero-inner .why-us {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #4BBFBC;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 5px 5px;
+  }
+  .hero-inner .why-us h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 18px;
+  }
+  .hero-inner .why-us p {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
